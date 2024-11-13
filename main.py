@@ -1,6 +1,5 @@
 from gestion.datos import *
-#import os
-#os.system ('cls')
+Datos = {"Alumnos": [{"Nombre": "Juan","Apellido": "Pérez","DNI": "12345678","Fecha de nacimiento": "01/01/2005","Tutor": "María López","Notas": [8, 9, 7],"Faltas": 3,"Amonestaciones": 1}]}
 
 def menu():
     print("1. Mostrar todos los alumnos")
@@ -13,18 +12,18 @@ def menu():
 
 def opciones():
     while True:
-        opcion = menu(Datos)
+        opcion = menu()
         if opcion == 1:
             mostrar_todos(Datos)
         elif opcion == 2:
             agregar_alumno(Datos)
         elif opcion == 3:
-            modificar_alumno(Datos)
-        elif opcion == 4:
-            eliminar_alumno(Datos)
-        elif opcion == 5:
-            mostrar_alumno(Datos)
-        elif opcion == 6:
+        #     modificar_alumno(Datos)
+        # elif opcion == 4:
+        #     eliminar_alumno(Datos)
+        # elif opcion == 5:
+        #     mostrar_alumno(Datos)
+        # elif opcion == 6:
             print("Saliendo...")
             break
         else:
