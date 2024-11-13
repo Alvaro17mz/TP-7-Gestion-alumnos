@@ -1,5 +1,23 @@
 from gestion.datos import *
-Datos = {"Alumnos": [{"Nombre": "Juan","Apellido": "Pérez","DNI": "12345678","Fecha de nacimiento": "01/01/2005","Tutor": "María López","Notas": [8, 9, 7],"Faltas": 3,"Amonestaciones": 1}]}
+import os
+os.system ('cls')
+
+
+Datos = {
+    "Alumnos": [
+        {
+            "Nombre": "Juan",
+            "Apellido": "Pérez",
+            "DNI": "12345678",
+            "Fecha de nacimiento": "01/01/2005",
+            "Tutor": "María López",
+            "Notas": [8, 9, 7],
+            "Faltas": 3,
+            "Amonestaciones": 1
+        }
+    ]
+} # datos de prueba
+
 
 def menu():
     print("1. Mostrar todos los alumnos")
@@ -18,8 +36,8 @@ def opciones():
         elif opcion == 2:
             agregar_alumno(Datos)
         elif opcion == 3:
-        #     modificar_alumno(Datos)
-        # elif opcion == 4:
+            modificar_alumno(Datos)
+        elif opcion == 4:
         #     eliminar_alumno(Datos)
         # elif opcion == 5:
         #     mostrar_alumno(Datos)
