@@ -40,8 +40,10 @@ def opciones():
         elif opcion == 4:
          eliminar_alumno(Datos)
         elif opcion == 5:
-        #     mostrar_alumno(Datos)
+        #     agregar_notas(Datos)
         # elif opcion == 6:
+        #     agregar_amonestaciones(Datos)
+        # elif opcion == 7:
             print("Saliendo...")
             break
         else:
