@@ -24,8 +24,9 @@ def menu():
     print("2. Agregar alumno")
     print("3. Modificar datos")
     print("4. Eliminar alumno")
-    print("5. Mostrar alumno")
-    print("6. Salir")
+    print("5. Agregar notas")
+    print("6. Agregar amonestaciones")
+    print("7. Salir")
     return int(input("Seleccion opcion: "))
 
 def opciones():
@@ -38,12 +39,12 @@ def opciones():
         elif opcion == 3:
             modificar_alumno(Datos)
         elif opcion == 4:
-         eliminar_alumno(Datos)
-        elif opcion == 5:
+            eliminar_alumno(Datos)
+        # elif opcion == 5:
         #     agregar_notas(Datos)
         # elif opcion == 6:
         #     agregar_amonestaciones(Datos)
-        # elif opcion == 7:
+        elif opcion == 7:
             print("Saliendo...")
             break
         else:
