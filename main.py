@@ -38,8 +38,8 @@ def opciones():
         elif opcion == 3:
             modificar_alumno(Datos)
         elif opcion == 4:
-        #     eliminar_alumno(Datos)
-        # elif opcion == 5:
+         eliminar_alumno(Datos)
+        elif opcion == 5:
         #     mostrar_alumno(Datos)
         # elif opcion == 6:
             print("Saliendo...")

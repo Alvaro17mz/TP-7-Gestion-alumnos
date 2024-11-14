@@ -40,3 +40,12 @@ def modificar_alumno(Datos):
             print("Datos modificados.")
             return
     print("Alumno no encontrado.")
+
+def eliminar_alumno(Datos):
+    dni = input("Ingrese DNI del alumno a eliminar: ")
+    for alumno in Datos["Alumnos"]:
+        if alumno["DNI"] == dni:
+            Datos["Alumnos"].remove(alumno)
+            print("Alumno eliminado correctamente.")
+            return
+        print("Alumno no encontrado.")
