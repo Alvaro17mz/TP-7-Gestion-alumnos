@@ -25,7 +25,7 @@ def modificar_alumno(Datos):
             print("3. Modificar fecha de nacimiento")
             print("4. Modificar tutor")
             print("5. Salir")
-            opcion = input("Ingrese opción: ")
+            opcion = int(input("Ingrese opción: "))
             if opcion == 1:
                 alumno["Nombre"] = input("Ingrese nuevo nombre: ")
             elif opcion == 2:
