@@ -20,7 +20,7 @@ Este proyecto es una aplicación de consola para gestionar información de alumn
    ```
 2. Navega al directorio del proyecto:
    ```bash
-   cd gestion-alumnos
+   cd TP-7-Gestion-alumnos
    ```
 3. Ejecuta el archivo principal:
    ```bash
