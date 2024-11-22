@@ -49,3 +49,13 @@ def eliminar_alumno(Datos):
             print("Alumno eliminado correctamente.")
             return
         print("Alumno no encontrado.")
+
+def agregar_notas(Datos):
+    dni = input("Ingrese el DNI del alumno para agregar notas: ")
+    for alumno in Datos["Alumnos"]:
+        if alumno["DNI"] == dni:
+            nota = float(input("Ingrese la nueva nota: "))
+            alumno["Notas"].append(nota)
+            print("Nota agregada correctamente.")
+            return
+    print("Alumno no encontrado.")
